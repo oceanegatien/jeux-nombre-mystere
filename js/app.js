@@ -2,19 +2,20 @@ var solution = Math.random() * (3 - 0) + 0;
 var arrondis = Math.round(solution);
 
 
-var response = prompt("But du jeu: écrivez un chiffre entre 0 et 3, et voyons si vous pensez comme la machine! 2 essais maximum! Good luck!");
+var response = prompt("Ecrivez un chiffre entre 0 et 3");
 
 if (response < arrondis){
-	var response = prompt("Trop petit!");
+	console.log("trop petit!");
+}else{
+	console.log("trop grand!");
 }
-else{
-	var response = prompt("Trop Grand!");
-}
+
+
 if (response == arrondis){
 	console.log("Bravo! C'est gagné!");
 } 
 else{
-	console.log("Perdu! ");
+	var response = prompt("Essayez encore !");
 }
 
 
